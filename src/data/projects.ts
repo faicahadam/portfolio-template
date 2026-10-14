@@ -1,14 +1,12 @@
+
 export type AppStat = { value: string; label: string }
 
 export type AppProject = {
   name: string
   tagline: string
   description: string
-  /** Optional - omit for gradient placeholder cards */
   imageSrc?: string
-  /** CSS object-position override. Defaults to 'top center'. */
   imagePosition?: string
-  /** External brand color - not a site token. Passed via --app-color inline prop. */
   accentColor: string
   stats: AppStat[]
   badge: string
@@ -17,82 +15,95 @@ export type AppProject = {
 /** @deprecated use AppProject */
 export type MobileApp = AppProject
 
-/**
- * Your apps. Every value is a PLACEHOLDER. Screenshots live in
- * public/placeholders/ - swap in your own (960x514 works well).
- */
-const STATS: AppStat[] = [
-  { value: '0', label: 'Stat one' },
-  { value: '0', label: 'Stat two' },
-  { value: '0', label: 'Stat three' },
+const ghlStats: AppStat[] = [
+  { value: 'CRM', label: 'Lead management' },
+  { value: 'Demo', label: 'Sample workflow' },
+  { value: 'GHL', label: 'Platform focus' },
 ]
 
-const DESC = 'PLACEHOLDER - tell me what to put here: what the app does, who it is for, and where it is published.'
+const healthcareStats: AppStat[] = [
+  { value: 'Admin', label: 'Office support' },
+  { value: 'Demo', label: 'Sample workflow' },
+  { value: 'Care', label: 'Patient coordination' },
+]
 
 export const mobileApps: MobileApp[] = [
   {
-    name: 'App Name One',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
-    imageSrc: '/placeholders/app-1.jpg',
-    imagePosition: '50% 30%',
+    name: 'Lead Follow-Up Workflow',
+    tagline: 'Organized lead management with GoHighLevel',
+    description:
+      'A demonstration concept for organizing new leads, tracking pipeline stages, and planning follow-up tasks in GoHighLevel. This is a sample project, not a completed client implementation.',
     accentColor: '#2563EB',
-    stats: STATS,
-    badge: 'Badge',
+    stats: ghlStats,
+    badge: 'Demo Project',
   },
   {
-    name: 'App Name Two',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
-    imageSrc: '/placeholders/app-2.jpg',
+    name: 'Appointment Coordination',
+    tagline: 'A sample healthcare scheduling process',
+    description:
+      'A sample workflow showing how appointment requests, scheduling tasks, and follow-up reminders can be organized for a healthcare team. No real patient information is used.',
     accentColor: '#7C3AED',
-    stats: STATS,
-    badge: 'Badge',
+    stats: healthcareStats,
+    badge: 'Demo Project',
   },
   {
-    name: 'App Name Three',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
-    imageSrc: '/placeholders/app-3.jpg',
+    name: 'Administrative Task Tracker',
+    tagline: 'A more organized virtual assistant workflow',
+    description:
+      'A demonstration concept for organizing recurring tasks, tracking pending requests, and planning administrative follow-ups.',
     accentColor: '#16A34A',
-    stats: STATS,
-    badge: 'Badge',
+    stats: [
+      { value: 'Tasks', label: 'Organization' },
+      { value: 'Demo', label: 'Sample workflow' },
+      { value: 'VA', label: 'Admin support' },
+    ],
+    badge: 'Demo Project',
   },
 ]
 
 export const webApps: AppProject[] = [
   {
-    name: 'Web App One',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
+    name: 'CRM Pipeline Setup',
+    tagline: 'Keep contacts and opportunities organized',
+    description:
+      'A sample GoHighLevel CRM concept illustrating contact organization, pipeline stages, and a consistent lead follow-up process.',
     accentColor: '#0EA5E9',
-    stats: STATS,
-    badge: 'Badge',
+    stats: ghlStats,
+    badge: 'Demo Project',
   },
   {
-    name: 'Web App Two',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
+    name: 'Lead Capture Funnel',
+    tagline: 'A sample inquiry-to-follow-up journey',
+    description:
+      'A demonstration concept for a landing page that collects inquiries and organizes follow-up steps for a business.',
     accentColor: '#EF4444',
-    stats: STATS,
-    badge: 'Badge',
+    stats: [
+      { value: 'Leads', label: 'Inquiry capture' },
+      { value: 'Demo', label: 'Sample funnel' },
+      { value: 'CRM', label: 'Contact organization' },
+    ],
+    badge: 'Demo Project',
   },
   {
-    name: 'Web App Three',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
-    imageSrc: '/placeholders/project-3.jpg',
+    name: 'Healthcare Appointment Support',
+    tagline: 'A sample appointment coordination workflow',
+    description:
+      'A concept for organizing appointment requests, reminders, and administrative follow-ups. It uses no real patient records and does not represent a live healthcare system.',
     accentColor: '#0891B2',
-    stats: STATS,
-    badge: 'Badge',
+    stats: healthcareStats,
+    badge: 'Demo Project',
   },
   {
-    name: 'Web App Four',
-    tagline: 'PLACEHOLDER - one-line tagline.',
-    description: DESC,
-    imageSrc: '/placeholders/project-4.jpg',
+    name: 'Virtual Assistant Operations',
+    tagline: 'Simple systems for everyday business tasks',
+    description:
+      'A sample workflow for tracking assigned tasks, organizing priorities, and keeping administrative requests moving.',
     accentColor: '#F59E0B',
-    stats: STATS,
-    badge: 'Badge',
+    stats: [
+      { value: 'Tasks', label: 'Task tracking' },
+      { value: 'Demo', label: 'Sample workflow' },
+      { value: 'Ops', label: 'Business support' },
+    ],
+    badge: 'Demo Project',
   },
 ]
