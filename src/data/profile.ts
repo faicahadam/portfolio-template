@@ -1,6 +1,7 @@
 
 /**
- * Personal profile for GoHighLevel and Healthcare Virtual Assistance.
+ * Personal profile for GoHighLevel, SEO, Digital Marketing,
+ * Website Development, and Healthcare Administrative Support.
  */
 
 import { Briefcase, SealCheck, Clock, type Icon } from '@/components/slab'
@@ -33,31 +34,31 @@ export type Profile = {
 }
 
 export const profile: Profile = {
-  name: 'J. Carlo Ang',
-  firstName: 'Carlo',
-  handle: '@jcarloang',
-  role: 'GoHighLevel Specialist & Healthcare VA',
+  name: 'Faicah Julianne Adam',
+  firstName: 'Faicah',
+  handle: '@faicahadam',
+  role: 'GoHighLevel Specialist | SEO Expert | Virtual Assistant',
   avatarSrc: '/avatar.svg',
-  verifiedLabel: 'Virtual Assistant',
-  email: 'YOUR_EMAIL@example.com',
+  verifiedLabel: 'GoHighLevel Specialist',
+  email: 'faicahadam@gmail.com',
   location: 'Philippines | GMT+8',
 
   stats: [
-    { value: 'GHL', label: 'CRM Support', Icon: Briefcase },
-    { value: 'Healthcare', label: 'VA Experience', Icon: SealCheck },
-    { value: 'GMT+8', label: 'Philippines', Icon: Clock },
+    { value: 'GHL', label: 'CRM & Automation', Icon: Briefcase },
+    { value: 'SEO', label: 'Website Optimization', Icon: SealCheck },
+    { value: 'Healthcare', label: 'Admin Support', Icon: Clock },
   ],
 
   displayName: {
-    line1: 'Better systems.',
-    line2: 'Reliable support.',
+    line1: 'Smart systems.',
+    line2: 'Better results.',
   },
 
   hero: {
     body:
-      'I help businesses manage CRM workflows, appointment scheduling, patient coordination, and everyday administrative tasks.',
+      'I help businesses streamline their CRM, build sales funnels, manage marketing automation, improve website SEO, and handle administrative tasks. I also bring experience in healthcare scheduling and insurance verification.',
     portraitSrc: '/avatar.svg',
-    portraitAlt: 'Profile photo placeholder',
+    portraitAlt: 'Faicah Julianne Adam profile photo placeholder',
   },
 
   socials: [
