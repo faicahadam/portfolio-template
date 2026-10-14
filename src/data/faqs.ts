@@ -1,30 +1,29 @@
+
 export type QA = { q: string; a: string }
 
 /**
- * The questions people ask before they email. One list, used by the FAQ
- * accordion on the Contact view (and the legacy long-scroll FAQ section).
- * Five questions, two or three sentences each: the accordion sits in a
- * fixed panel and more than that pushes the email row off the plate.
+ * Frequently asked questions for GoHighLevel
+ * and Healthcare Virtual Assistant services.
  */
 export const FAQS: QA[] = [
   {
-    q: 'What do you do?',
-    a: 'PLACEHOLDER - tell me what to put here: the kinds of work you take on, and who it is usually for.',
+    q: 'What services do you offer?',
+    a: 'I provide GoHighLevel CRM support, pipeline management, workflow automation assistance, funnel support, appointment scheduling, patient coordination, and healthcare administrative support.',
   },
   {
-    q: 'How fast can you start?',
-    a: 'PLACEHOLDER - tell me what to put here: your usual lead time for small fixes vs. larger projects, and your working hours.',
+    q: 'How soon can you start?',
+    a: 'Availability depends on the project scope and schedule. Contact me with your requirements so we can discuss your timeline and the next steps.',
   },
   {
     q: 'How much do you charge?',
-    a: 'PLACEHOLDER - tell me what to put here: how you price (hourly, per project, retainer) and how a quote is put together.',
+    a: 'Rates depend on the tasks, required hours, and project complexity. Send me your requirements so I can review the scope and discuss a suitable working arrangement.',
   },
   {
     q: 'Where are you based?',
-    a: 'PLACEHOLDER - tell me what to put here: your location or timezone, and which client timezones you overlap with.',
+    a: 'I am based in the Philippines and work in the GMT+8 timezone. I can discuss schedule options with clients in different timezones.',
   },
   {
-    q: 'What happens after I write?',
-    a: 'PLACEHOLDER - tell me what to put here: how fast you reply and what the next step looks like.',
+    q: 'What happens after I contact you?',
+    a: 'Tell me about your business, the tasks you need help with, and the tools you use. We can then discuss your requirements, availability, and the next steps.',
   },
 ]
